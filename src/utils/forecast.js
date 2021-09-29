@@ -2,7 +2,7 @@ const axios = require("axios");
 
 const BASE_URL = "http://api.weatherstack.com";
 
-const { WEATHER_STACK_API_KEY } = require("../../APIKeys");
+const WEATHER_STACK_API_KEY = process.env.WEATHER_STACK_API_KEY;
 
 const forecast = async (latitude, longitude, callback) => {
   try {

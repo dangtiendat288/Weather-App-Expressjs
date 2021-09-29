@@ -2,7 +2,7 @@ const axios = require("axios");
 
 const MAP_BASE_URL = "https://api.mapbox.com";
 
-const { MAP_BOX_API_TOKEN } = require("../../APIKeys");
+const MAP_BOX_API_TOKEN = process.env.MAP_BOX_API_TOKEN;
 
 const geoCode = async (address, callback) => {
   try {
